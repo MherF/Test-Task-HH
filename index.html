@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+
+    <link type="text/css" rel="stylesheet" href="libs/css/style.css">
+</head>
+<body>
+    
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="content">
+
+                <div class="top-head">
+                    <ul class="v-list-items">
+                        <li>
+                            <a>GENOTEK</a>
+                        </li>
+                        <li>
+                            <a>
+                                неделю назад
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="fas fa-user"></i><span>доступно только мне</span>
+                           </a>
+                    </li>
+                    </ul>
+                    <h1 class="top-head_head">
+                        Подарочный набор для сдачи ДНК-теста доставлен
+                    </h1>
+                    <p class="sub_text">
+                        Спасибо, что выбрали Genotek! На упаковке вы найдете подробную инструкцию как сдать ДНК-тест.
+                    </p>
+                </div>
+                <div class="content-img">
+                    <img src="libs/img/image.png" alt="IMG">
+                </div>
+                <div class="switch-pannels">
+                    <ul>
+                        <li>
+                             <div class="url">
+                                <span class="text">Как подарить набор другу, чтобы он создал свой личный кабинет?</span>
+                                <i class="fas fa-chevron-down fl_right"></i>
+                                <div class="dropdown">
+                                    <div class="left-side">
+                                        <p>
+                                            Все просто! На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен стираемой полосой. 
+                                        </p>
+                                        <p>
+                                            Человеку, который получил ДНК-тест в подарок, нужно ввести временный логин и пароль на странице входа в личный кабинет <a href="lk.genotek.ru.">lk.genotek.ru.</a> После этого ему будет предложено зарегистрироваться или указать данные уже зарегистрированного пользователя, ввести номер пробирки и вызвать курьера для доставки биоматериала в лабораторию. 
+                                        </p>
+                                        <p>
+                                            Обратите внимание, что по умолчанию вы не получите доступ к результатам ДНК-теста того, кому вы подарили тест. Но вы можете попросить вашего близкого поделиться с вами результатами в его настройках профиля.
+                                        </p>
+
+                                        </p>
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="libs/img/icon.png" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                       </li>
+                        <li>
+                            <div class="url">
+                                <span class="text">Хочу активировать ДНК-тест в этом личном кабинете</span>
+                                <i class="fas fa-chevron-down fl_right"></i>
+                                <div class="dropdown">
+                                    <div class="left-side">
+                                        <p>
+                                            На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен стираемой полосой. Пожалуйста, введите их ниже. После ввода временных данных, вы сможете ввести номер пробирки и вызвать курьера для доставки биоматериала в лабораторию. 
+                                        </p>
+                                       
+                                    </div>
+                                    <div class="right-side">
+                                        <img src="libs/img/icon.png" alt="icon">
+                                    </div>
+                                    <div class="form">
+                                        <form>
+                                            <div class="form-row">
+                                                <label for="login"></label>
+                                                <input id="login" type="text" placeholder="Логин">
+                                                <img class="close-icon" src="libs/img/group-2-copy-3.png" alt="x">
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="password"></label>
+                                                <input id="password" type="password" placeholder="Пароль">
+                                                <img class="close-icon" src="libs/img/group-2-copy-3.png" alt="x">
+                                            </div>
+                                            <div class="form-botton">
+                                                <button type="submit">
+                                                    Активировать ДНК-тест
+                                                </button>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        var li = document.querySelectorAll('.switch-pannels li');
+        li.forEach(function(key,value){
+            key.onclick = function(){
+                var all = document.querySelectorAll('.switch-pannels li .dropdown');
+                var icons = document.querySelectorAll('.switch-pannels li i');
+                all.forEach(function(key, value){
+                    key.style.display = "none";
+                });
+                icons.forEach(function(key,value){
+                    key.classList.remove('fa-chevron-up');
+                    key.classList.remove('fa-chevron-down');
+                    key.classList.add('fa-chevron-down');
+                })
+                var dropdown = this.getElementsByClassName('dropdown')[0];
+                var icon = this.getElementsByTagName('i')[0];
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+                dropdown.style.display = "inline-block";
+            }
+        })
+
+    </script>
+
+</body>
+</html>

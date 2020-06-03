@@ -1,0 +1,251 @@
+@import 'all.min.css';
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #f4f4f6;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+ul.v-list-items{
+    li{
+        display: inline-block;
+        margin-right: 15px;
+        span{
+            margin-left: 8px;
+            @media all and (max-width: 481px){
+                display: none;
+            }
+        }
+        a{
+            font-family: "ALSStory", sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.36;
+            letter-spacing: normal;
+            color: var(--brownish-grey);
+        }
+    }
+}
+
+input::placeholder{
+    opacity: 1;
+    color: white;
+}
+input::-webkit-input-placeholder{
+    opacity: 1;
+    color:white;
+}
+input::-moz-placeholder{
+    opacity: 1;
+    color:white;
+}
+
+.fl_right{
+    float: right;
+}
+.content{
+    max-width: 1300px;
+    float: none;
+    margin: 114px auto 43px;
+    >div{
+        display: inline-block;
+        width: 100%;
+    }
+    .top-head{
+        background: white;
+        padding: 31px 45px;
+
+    }
+    .content-img{
+        &, & img{
+            float: left;
+            display: inline-block;
+        }
+        img{
+            @media all and (max-width: 481px){
+               min-height: 210px; 
+            }
+        }
+    }
+    .top-head_head{
+        min-height: 38px;
+        font-family: ALSStory;
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.27;
+        letter-spacing: normal;
+        color: #000000;
+        margin: 15px 0 8px;
+    }
+    .sub_text{
+        max-width: 450px;
+        min-height: 48px;
+        font-family: ALSStory;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #000000;
+        margin: 0;
+    }
+    .switch-pannels{
+        div.url{   
+            width: 100%; 
+            color: white;
+            cursor: pointer;
+            span.text{
+                @media all and (max-width: 767px){
+                    max-width: 220px;
+                    display: inline-block;
+                }
+            }
+            @media all and (max-width:767px){
+                i{
+                    top: 20px;
+                    position: relative;
+                }
+            }
+            
+            .dropdown{
+                display: none;
+                border-top: 1px solid #585858;
+                margin-top: 29px;
+                padding-top: 29px;
+               
+                >div{
+                    display: inline-block;
+                    float: left;
+                    @media all and (max-width: 767px){
+                        width: 100% !important;
+                    }
+                }
+               .close-icon{
+                max-width: 12px;
+                right: 5px;
+                position: absolute;
+                top: 0;
+               }
+                .form{
+                    min-width: 281px;
+                    input{
+                        width: 100%;
+                    }
+                   
+                    @media all and (min-width: 992px){
+                        margin-top: -120px;
+                    }
+                    @media all and(min-width: 768px){
+                        margin-top: -80px;
+                    }
+                }
+               
+
+                form{
+                    margin-top: 30px;
+                    label{
+                        display: none;
+                    }
+                    input{
+                        border: 0;
+                        background: transparent;
+                        border-bottom: 1px solid white;
+                        outline: none;
+                    }
+                    .form-row{
+                        margin-bottom: 30px;
+                        position: relative;
+                    }
+                    .form-botton{
+                        margin-top: 50px;
+                    }
+                    .form-botton button{
+                        min-height: 30px;
+                        font-family: ALSStory;
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.88;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #ffffff;
+                        background: transparent;
+                        outline: none;
+                        border: 1px solid white;
+                        border-radius: 30px;
+                        padding: 6px 15px;
+                        &:hover, :active, :focus{
+                            background: white;
+                            color: black;
+                        }
+                    }
+                    .form-row img{
+                        display: none;
+                    }
+                    .form-row input:focus + img{
+                        display: inline-block;
+                    }
+                }
+                .left-side{
+                    width: 57.2%;
+                    p{
+                        font-family: ALSStory;
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.5;
+                        letter-spacing: normal;
+                        color: #ffffff;
+                        a{
+                            color: #5a88c1;
+                        }
+                    }
+                }
+                
+                .right-side{
+                    width: 42.8%;
+                    @media all and (max-width: 767px){
+                        text-align: center;
+                    }
+                    img{
+                        margin-left: 20%;
+                        max-width: 250px;
+                        @media all and (max-width: 767px){
+                            margin-left: 0;
+                            padding: 15px;
+                        }
+                    }
+                  
+                }
+           }
+        }
+        li {
+            background-color: #142536;
+            padding: 30px 45px;
+            display: inline-block;
+            width: 100%;
+            float: left;
+            margin-top: -1px;
+            &:first-child{
+                border: 1px solid white;
+            }
+        }
+    } 
+    
+}

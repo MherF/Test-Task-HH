@@ -1,0 +1,248 @@
+@import 'all.min.css';
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f4f4f6;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+ul.v-list-items li {
+  display: inline-block;
+  margin-right: 15px;
+}
+ul.v-list-items li span {
+  margin-left: 8px;
+}
+@media all and (max-width: 481px) {
+  ul.v-list-items li span {
+    display: none;
+  }
+}
+ul.v-list-items li a {
+  font-family: "ALSStory", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+input::placeholder {
+  opacity: 1;
+  color: white;
+}
+input::-webkit-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  color: white;
+}
+.fl_right {
+  float: right;
+}
+.content {
+  max-width: 1300px;
+  float: none;
+  margin: 114px auto 43px;
+}
+.content > div {
+  display: inline-block;
+  width: 100%;
+}
+.content .top-head {
+  background: white;
+  padding: 31px 45px;
+}
+.content .content-img,
+.content .content-img img {
+  float: left;
+  display: inline-block;
+}
+@media all and (max-width: 481px) {
+  .content .content-img img {
+    min-height: 210px;
+  }
+}
+.content .top-head_head {
+  min-height: 38px;
+  font-family: ALSStory;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #000000;
+  margin: 15px 0 8px;
+}
+.content .sub_text {
+  max-width: 450px;
+  min-height: 48px;
+  font-family: ALSStory;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  margin: 0;
+}
+.content .switch-pannels div.url {
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+@media all and (max-width: 767px) {
+  .content .switch-pannels div.url span.text {
+    max-width: 220px;
+    display: inline-block;
+  }
+}
+@media all and (max-width: 767px) {
+  .content .switch-pannels div.url i {
+    top: 20px;
+    position: relative;
+  }
+}
+.content .switch-pannels div.url .dropdown {
+  display: none;
+  border-top: 1px solid #585858;
+  margin-top: 29px;
+  padding-top: 29px;
+}
+.content .switch-pannels div.url .dropdown > div {
+  display: inline-block;
+  float: left;
+}
+@media all and (max-width: 767px) {
+  .content .switch-pannels div.url .dropdown > div {
+    width: 100% !important;
+  }
+}
+.content .switch-pannels div.url .dropdown .close-icon {
+  max-width: 12px;
+  right: 5px;
+  position: absolute;
+  top: 0;
+}
+.content .switch-pannels div.url .dropdown .form {
+  min-width: 281px;
+}
+.content .switch-pannels div.url .dropdown .form input {
+  width: 100%;
+}
+@media all and (min-width: 992px) {
+  .content .switch-pannels div.url .dropdown .form {
+    margin-top: -120px;
+  }
+}
+@media all and (min-width: 768px) {
+  .content .switch-pannels div.url .dropdown .form {
+    margin-top: -80px;
+  }
+}
+.content .switch-pannels div.url .dropdown form {
+  margin-top: 30px;
+}
+.content .switch-pannels div.url .dropdown form label {
+  display: none;
+}
+.content .switch-pannels div.url .dropdown form input {
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+.content .switch-pannels div.url .dropdown form .form-row {
+  margin-bottom: 30px;
+  position: relative;
+}
+.content .switch-pannels div.url .dropdown form .form-botton {
+  margin-top: 50px;
+}
+.content .switch-pannels div.url .dropdown form .form-botton button {
+  min-height: 30px;
+  font-family: ALSStory;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 6px 15px;
+}
+.content .switch-pannels div.url .dropdown form .form-botton button:hover,
+.content .switch-pannels div.url .dropdown form .form-botton button :active,
+.content .switch-pannels div.url .dropdown form .form-botton button :focus {
+  background: white;
+  color: black;
+}
+.content .switch-pannels div.url .dropdown form .form-row img {
+  display: none;
+}
+.content .switch-pannels div.url .dropdown form .form-row input:focus + img {
+  display: inline-block;
+}
+.content .switch-pannels div.url .dropdown .left-side {
+  width: 57.2%;
+}
+.content .switch-pannels div.url .dropdown .left-side p {
+  font-family: ALSStory;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.content .switch-pannels div.url .dropdown .left-side p a {
+  color: #5a88c1;
+}
+.content .switch-pannels div.url .dropdown .right-side {
+  width: 42.8%;
+}
+@media all and (max-width: 767px) {
+  .content .switch-pannels div.url .dropdown .right-side {
+    text-align: center;
+  }
+}
+.content .switch-pannels div.url .dropdown .right-side img {
+  margin-left: 20%;
+  max-width: 250px;
+}
+@media all and (max-width: 767px) {
+  .content .switch-pannels div.url .dropdown .right-side img {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
+.content .switch-pannels li {
+  background-color: #142536;
+  padding: 30px 45px;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-top: -1px;
+}
+.content .switch-pannels li:first-child {
+  border: 1px solid white;
+}
